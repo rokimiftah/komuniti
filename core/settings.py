@@ -133,15 +133,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+# Collect Static CDN
 # STATIC_HOST = os.getenv("DJANGO_STATIC_HOST", "")
-
 # STATIC_URL = STATIC_HOST + "static/"
 
-STATIC_URL = "static/"
+# Collect Static Local
+# STATIC_ROOT = BASE_DIR / "staticfiles"
 
+# Static run for development
+STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
-# STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
